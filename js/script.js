@@ -24,3 +24,15 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+  document.getElementsByClassName("btnred").addEventListener("submit", validarFormulario)
+
+  function validarFormulario () {
+    if (document.getElementsByClassName("nome").value != "" && document.getElementsByClassName("email").value !=  ""){
+
+      alert("Prontinho! Você receberá as novidades por email ")
+    
+      } else {
+      alert("Por favor, preencha os campos nome e email ")
+      }
+}
