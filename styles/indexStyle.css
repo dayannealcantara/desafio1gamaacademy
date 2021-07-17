@@ -1,4 +1,4 @@
-.card {
+.produtos {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: transform .2s;
   border-radius: 30px;
@@ -8,17 +8,17 @@
  
 }
 
-.card img {
+.produtos img {
   height: 40%;
   border-radius: 30px;
 }
 
-.card:hover {
+.produtos:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
-.card button:hover {
+.produtos button:hover {
   opacity: 0.7;
 }
 
@@ -42,10 +42,10 @@ img {
   width: 100%;
 }
 
-.auto-grid {
-  display: grid;
+.promoçoes {
+  display:grid;
   height: 400px;
-  grid-template-columns: 1fr 1fr 1fr ;
+  grid-template-columns: 1fr 1fr 1fr;
   padding: 3% 15%;
 }
 
@@ -57,7 +57,7 @@ h2 {
 }
 
 @media screen and (min-width: 801px) {
-  .auto-grid {
+  .promoçoes {
     --auto-grid-min-size: 25rem;
     grid-gap: 5rem;
   }
@@ -76,7 +76,7 @@ h2 {
 }
 
 @media screen and (max-width: 800px) {
-  .auto-grid {
+  .promoçoes {
     --auto-grid-min-size: 16rem;
     grid-gap: 1rem;
   }
