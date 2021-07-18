@@ -1,97 +1,85 @@
 .produtos {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-  transition: transform .2s;
-  border-radius: 30px;
-  margin: auto;
-  text-align: center;
-  font-family: arial;
- 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+    transition: transform .2s;
+    border-radius: 30px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
 }
 
 .produtos img {
-  height: 40%;
-  border-radius: 30px;
+    height: 40%;
+    border-radius: 30px;
 }
 
 .produtos:hover {
-  transform: scale(1.05);
-  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 .produtos button:hover {
-  opacity: 0.7;
+    opacity: 0.7;
 }
 
 h3 {
-  text-align: center;
-  padding-top: 2%;
-  padding-left: 2%;
-  padding-right: 2%;
-  color: #000;
+    text-align: center;
+    padding-top: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #000;
 }
 
 p {
-  text-align: justify;
-  padding-left: 2%;
-  padding-right: 2%;
-  color: #000;
+    text-align: justify;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: #000;
 }
-
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
-.promoçoes {
-  display:grid;
-  height: 400px;
-  grid-template-columns: 1fr 1fr 1fr;
-  padding: 3% 15%;
+.promocoes {
+    display: grid;
+    height: 400px;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 3% 15%;
 }
-
 
 h2 {
-  font-size: 25px;
-  text-align: center;
-  color: #000;
+    font-size: 25px;
+    text-align: center;
+    color: #000;
 }
 
 @media screen and (min-width: 801px) {
-  .promoçoes {
-    --auto-grid-min-size: 25rem;
-    grid-gap: 5rem;
-  }
-  
-  h3 {
-    font-size: 22px;
-  }
-
-  p {
-    font-size: 17px;
-  }
-
-  audio {
-    width: 50%;
-  }
+    .promocoes {
+        --auto-grid-min-size: 25rem;
+        grid-gap: 5rem;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    p {
+        font-size: 17px;
+    }
+    audio {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 800px) {
-  .promoçoes {
-    --auto-grid-min-size: 16rem;
-    grid-gap: 1rem;
-  }
-
-  article.linhaProdutos {
-    margin: 10% 0 ;
-  }
-
-  h3 {
-    font-size: 17px;
-    
-  }
-
-  p {
-    font-size: 15px;
-  }
-
+    .promocoes {
+        display: table-cell;
+    }
+    article.linhaProdutos {
+        margin: 10% 0;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    p {
+        font-size: 15px;
+    }
 }

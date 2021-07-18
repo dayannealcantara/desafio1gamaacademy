@@ -1,203 +1,213 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: #d4f0f0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d4f0f0;
 }
 
 header {
-  overflow: hidden;
-  background-color: #8fcaca;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    overflow: hidden;
+    background-color: #8fcaca;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 header a {
-  color: black;
-  text-align: center;
-  padding: 12px;
-  text-decoration: none;
-  font-size: 18px;
-  line-height: 25px;
-  border-radius: 4px;
-  margin-right: 8px;
+    color: black;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+    margin-right: 8px;
 }
 
 header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-  border: #fff;
+    font-size: 25px;
+    font-weight: bold;
+    border: #fff;
 }
 
 header img {
-  width: 180px;
+    width: 180px;
 }
 
 header .header-right a:hover {
-  background-color: #000;
-  color: white;
+    background-color: #000;
+    color: white;
 }
 
 header a.active {
-  background-color: #000;
-  color: white;
+    background-color: #000;
+    color: white;
 }
 
 .header-right {
-  float: right;
+    float: right;
 }
 
 .sobre {
-  display: flex;
-  justify-content: center;
-
+    display: flex;
+    justify-content: center;
 }
 
-.sobreTitle{
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  margin: 0 5%;
+.sobre img {
+    width: 30%;
+}
+
+.sobreTitle {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5%;
 }
 
 .sobreTitle h2 {
-
-  font-size: 30px ;
-    text-align: center ;
-       font-weight: bold ;
-  background-image: url(https://www.blackfriday.com.br/assets/dist/images/red-brush.png);
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-image: url(https://www.blackfriday.com.br/assets/dist/images/red-brush.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: bottom;
 }
 
 .sobreForm {
-  background-color: rgba(0, 0, 0, 0.65);
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center
+    background-color: rgba(0, 0, 0, 0.65);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center
 }
 
 .sobre h3 {
-  color: #fff;
-  font-size: 19px;
-  text-align: center;
-  margin-bottom: 20px;
-  display: block;
-  padding: 0 20px;
-  line-height: 28px
+    color: #fff;
+    font-size: 19px;
+    text-align: center;
+    margin-bottom: 20px;
+    display: block;
+    padding: 0 20px;
+    line-height: 28px
 }
 
 .input input {
-  height: 47px;
-  border-radius: 3px;
-  display: block;
-  width: 100%;
-  border: 1px solid #a7a6a6;
-  background-color: #fff;
-  margin-bottom: 7px;
- color: #000;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
+    height: 47px;
+    border-radius: 3px;
+    display: block;
+    width: 100%;
+    border: 1px solid #a7a6a6;
+    background-color: #fff;
+    margin-bottom: 7px;
+    color: #000;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .btnred {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  padding: 15px;
-  font-size: 19px;
-  color: #000;
-  background: #ec2d2d;
-  font-weight: 500;
-  border-radius: 23px;
-  border: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 15px;
+    font-size: 19px;
+    color: #000;
+    background: #ec2d2d;
+    font-weight: 500;
+    border-radius: 23px;
+    border: none;
 }
 
 @media screen and (max-width: 500px) {
-  header a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
-  .header-right {
-    float: none;
-  }
-  header a.logo {
-    text-align: center;
-  }
+    header {
+        height: auto;
+    }
+    .header-right {
+        display: flex;
+        flex-direction: column;
+    }
+    header a.logo {
+        text-align: center;
+    }
 }
 
 #content {
-  margin: 2% 2% 0% 2%;
+    margin: 2% 2% 0% 2%;
 }
 
 #presentation {
-  text-align: center;
+    text-align: center;
 }
 
 #title h2 {
-  font-size: 30px;
-  color: #fff;
+    font-size: 30px;
+    color: #fff;
 }
 
 #subtitle h2 {
-  font-size: 20px;
-  color: #a2e1db;
+    font-size: 20px;
+    color: #a2e1db;
 }
 
 hr.rounded {
-  border-top: 5px solid #a2e1db;
-  border-radius: 5px;
+    border-top: 5px solid #a2e1db;
+    border-radius: 5px;
 }
 
 footer {
-  width: 100%;
-  background-color: #8fcaca;
-  color: #000;
-  text-align: center;
-  padding: 5px;
-  
+    width: 100%;
+    background-color: #8fcaca;
+    color: #000;
+    text-align: center;
+    padding: 5px;
 }
+
 .redesSociais_lista {
-  text-align: center;
+    text-align: center;
 }
+
 .redesSociais_lista_item {
-  display: inline-block;
-  margin: 0 5px;
+    display: inline-block;
+    margin: 0 5px;
 }
+
 .redesSociais_lista_item img {
-  width: 100%;
-  max-width: 20px;
+    width: 100%;
+    max-width: 20px;
 }
 
 footer a {
-  font-weight: bold;
-  text-decoration: none;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 footer a:visited {
-  color: white;
+    color: white;
 }
 
 footer a:link {
-  color: #000;
+    color: #000;
 }
 
 footer h4 {
-  font-size: 20px;
+    font-size: 20px;
 }
 
 @media screen and (max-width: 800px) {
-  #content {
-    margin-bottom: 5%;
-  }
+    .sobre {
+        display: block;
+    }
+    .sobre img {
+        display: none;
+    }
+    .sobreTitle {
+        width: 100%;
+        margin: 0;
+    }
 }
